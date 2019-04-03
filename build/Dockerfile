@@ -23,7 +23,7 @@ RUN pip install pyyaml \
     && pip install --pre --upgrade suricata-update
 
 COPY entrypoint.sh /etc/entrypoint.sh
-
+RUN chmod +x /etc/entrypoint.sh
 COPY suricata.yaml /etc/suricata/suricata.yaml
 
 
