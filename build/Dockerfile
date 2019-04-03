@@ -22,7 +22,8 @@ RUN pip install pyyaml \
     && pip install https://github.com/OISF/suricata-update/archive/master.zip \
     && pip install --pre --upgrade suricata-update
 
-COPY suricata.yaml /etc/suricata/suricata.yaml
+COPY entrypoint.sh /etc/entrypoint.sh
 
+COPY suricata.yaml /etc/suricata/suricata.yaml
 
 
